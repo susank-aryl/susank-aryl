@@ -65,36 +65,36 @@ class hospital:
         """
         print(f"The most common comment for {self.name} is {message}")
 
-grandy = hospital("Grandy" , "Greenland", "DepHealth", 120000, 40000) #Creating object instance
+# grandy = hospital("Grandy" , "Greenland", "DepHealth", 120000, 40000) #Creating object instance
 
-print(f"The name of this hospital is {grandy.name} and is located at {grandy.location}.")
+# print(f"The name of this hospital is {grandy.name} and is located at {grandy.location}.")
 
-print(f"The hospital belongs to the {grandy.ministry}") #Gives object's instance output.
+# print(f"The hospital belongs to the {grandy.ministry}") #Gives object's instance output.
 
-print(f"The hospital belongs to the {grandy.__class__.ministry}") #Gives class attribute by the name of ministry.
+# print(f"The hospital belongs to the {grandy.__class__.ministry}") #Gives class attribute by the name of ministry.
 
-print ('=' * 75)
+# print ('=' * 75)
 
-#Initializing the bed parameter for failities method
-grandy.facilities(42)
-print(f"The number of beds in {grandy.name} is {grandy.beds}.")
+# #Initializing the bed parameter for failities method
+# grandy.facilities(42)
+# print(f"The number of beds in {grandy.name} is {grandy.beds}.")
 
-print("=" * 75)
+# print("=" * 75)
 
-#Initialing message parameter fir complaint method
-grandy.complaints("too expensive")
-# grandy.message() # Error AttributeError : Has no attribute message
+# #Initialing message parameter fir complaint method
+# grandy.complaints("too expensive")
+# # grandy.message() # Error AttributeError : Has no attribute message
 
-print(f"The revenew of the hospital is {grandy.get_revenew()} with total patients being {grandy.get_patients()} and avg being {grandy.avg_money_spent()}.") #the private element can only be accessed using getter
+# print(f"The revenew of the hospital is {grandy.get_revenew()} with total patients being {grandy.get_patients()} and avg being {grandy.avg_money_spent()}.") #the private element can only be accessed using getter
 
-print("=" * 75)
+# print("=" * 75)
 
-# Using Getter and Setter
-grandy.set_patients(44700)
-grandy.set_revenew(125000)
-print(f"Past year the total patients were {grandy.get_patients()} and the total revenew was {grandy.get_revenew()}")
-print(f"Same year the average money spent was {grandy.avg_money_spent()}")
+# # Using Getter and Setter
+# grandy.set_patients(44700)
+# grandy.set_revenew(125000)
+# print(f"Past year the total patients were {grandy.get_patients()} and the total revenew was {grandy.get_revenew()}")
+# print(f"Same year the average money spent was {grandy.avg_money_spent()}")
 
-print("=" * 75)
-# Getting the class description "runs __str__ method"
-print(grandy)
+# print("=" * 75)
+# # Getting the class description "runs __str__ method"
+# print(grandy)
